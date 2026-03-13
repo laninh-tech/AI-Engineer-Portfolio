@@ -12,7 +12,7 @@ export const translations = {
       role1: "Kỹ sư",
       role2: "AI",
       role3: "Nhà khoa học",
-      role4: "dữ liệu",
+      role4: "Dữ liệu",
       description: "Sinh viên năm cuối chuyên ngành Khoa học Dữ liệu tại HCMUS. Tôi đam mê việc biến dữ liệu thô thành những giải pháp thông minh thông qua Deep Learning và NLP.",
       contactBtn: "Hợp tác ngay",
       downloadCv: "Tải CV",
