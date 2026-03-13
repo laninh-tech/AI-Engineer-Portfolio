@@ -41,11 +41,11 @@ export const featuredProjects: Project[] = [
       "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&fm=webp&q=80&w=1200",
     tags: ["Portfolio", "React", "TypeScript", "GitHub Pages"],
     solution:
-      "Xay dung website portfolio ca nhan de tong hop du an AI/Data va tao diem truy cap ro rang cho nha tuyen dung.",
+      "Xây dựng website portfolio cá nhân để tổng hợp dự án AI/Data và tạo điểm truy cập rõ ràng cho nhà tuyển dụng.",
     tech:
-      "React, TypeScript, Vite, Tailwind CSS, Motion va workflow GitHub Pages cho deploy static.",
+      "React, TypeScript, Vite, Tailwind CSS, Motion và workflow GitHub Pages cho triển khai static.",
     result:
-      "Tao mot portfolio online on dinh, responsive, de cap nhat va dong bo voi cac du an tren GitHub.",
+      "Tạo một portfolio online ổn định, responsive, dễ cập nhật và đồng bộ với các dự án trên GitHub.",
     github: "https://github.com/laninh-tech/AI-Engineer-Portfolio",
     demo: "https://laninh-tech.github.io/AI-Engineer-Portfolio/",
   },
