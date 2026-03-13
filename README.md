@@ -5,16 +5,13 @@ Personal portfolio website showcasing AI Engineering and Data Science projects, 
 ## Demo
 
 - Repository: https://github.com/laninh-tech/AI-Engineer-Portfolio
+- Live: https://laninh-tech.github.io/AI-Engineer-Portfolio/
 - Local: http://localhost:3001
 
 ## Repository Metadata
 
 - Description: Personal portfolio website showcasing AI Engineering, Data Science, and end-to-end intelligent systems.
 - Topics: ai-engineering, data-science, machine-learning, portfolio
-
-## Preview
-
-![Portfolio Overview](https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6)
 
 ## Tech Stack
 
@@ -93,6 +90,24 @@ cvProfileData.ts   # Fallback profile facts
 - `npm run dev`: run local app server
 - `npm run lint`: run TypeScript checks
 - `npm run build`: create production build
+
+## Deploy On GitHub Pages
+
+1. Push code to `main` branch.
+2. In GitHub repository, open `Settings -> Pages`.
+3. Under `Build and deployment`, choose `Source: GitHub Actions`.
+4. Ensure workflow file exists at `.github/workflows/deploy-pages.yml`.
+5. After workflow completes, your site URL will be:
+
+```text
+https://laninh-tech.github.io/AI-Engineer-Portfolio/
+```
+
+6. Update the `Live` link in this README if your final URL is different.
+
+Note:
+- GitHub Pages only hosts static frontend files.
+- API routes in `server.ts` (`/api/chat`, `/api/contact`) require a backend host (for example Render/Railway) if you want chatbot/contact features in production.
 
 ## Notes
 
