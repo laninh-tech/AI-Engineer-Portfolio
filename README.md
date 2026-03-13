@@ -10,7 +10,7 @@ Personal portfolio website showcasing AI Engineering and Data Science projects, 
 ## Repository Metadata
 
 - Description: Personal portfolio website showcasing AI Engineering, Data Science, and end-to-end intelligent systems.
-- Topics: ai-engineering, data-science, machine-learning, deep-learning, nlp, computer-vision, react, typescript, portfolio
+- Topics: ai-engineering, data-science, machine-learning, portfolio
 
 ## Preview
 
