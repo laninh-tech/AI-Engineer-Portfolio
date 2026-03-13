@@ -1,11 +1,16 @@
 # AI-Engineer-Portfolio
 
-Portfolio website for showcasing AI Engineer and Data Science projects, with bilingual UI (VI/EN), categorized project browsing, and a CV-grounded chatbot.
+Personal portfolio website showcasing AI Engineering and Data Science projects, with bilingual UI (VI/EN), categorized project browsing, and a CV-grounded chatbot.
 
 ## Demo
 
 - Repository: https://github.com/laninh-tech/AI-Engineer-Portfolio
 - Local: http://localhost:3001
+
+## Repository Metadata
+
+- Description: Personal portfolio website showcasing AI Engineering, Data Science, and end-to-end intelligent systems.
+- Topics: ai-engineering, data-science, machine-learning, deep-learning, nlp, computer-vision, react, typescript, portfolio
 
 ## Preview
 
