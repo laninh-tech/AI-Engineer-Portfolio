@@ -33,22 +33,6 @@ export const categoryLabels: Record<ProjectCategory, string> = {
 
 export const featuredProjects: Project[] = [
   {
-    category: "Web App/Deployment",
-    name: "AI Engineer Portfolio",
-    subtitle: "Personal portfolio website highlighting selected AI and data work",
-    date: "Jan 2026",
-    image:
-      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&fm=webp&q=80&w=1200",
-    tags: ["Portfolio", "Responsive UI", "Frontend", "Branding"],
-    solution:
-      "Tạo một điểm truy cập tập trung để nhà tuyển dụng và collaborator xem nhanh các dự án AI/Data quan trọng trong một giao diện gọn, rõ ràng.",
-    tech:
-      "README định nghĩa theo hướng modern web portfolio stack, tập trung responsive UI, project-centric layout và phần content tối ưu cho giới thiệu kỹ thuật.",
-    result:
-      "Nâng khả năng discoverability của các dự án trọng tâm và giúp profile cá nhân nhất quán hơn khi ứng tuyển vị trí Internship Data Science/AI.",
-    github: "https://github.com/laninh-tech/AI-Engineer-Portfolio",
-  },
-  {
     category: "Data Analysis & Visualization",
     name: "Diabetes Health Risk Analysis",
     subtitle: "Health risk classification on CDC BRFSS indicators",
@@ -147,14 +131,6 @@ export const featuredProjects: Project[] = [
 ];
 
 const projectContentEn: Record<string, { solution: string; tech: string; result: string }> = {
-  "https://github.com/laninh-tech/AI-Engineer-Portfolio": {
-    solution:
-      "A centralized personal portfolio that helps recruiters and collaborators quickly review selected AI/Data projects through a clean, project-first interface.",
-    tech:
-      "Built with a modern web portfolio stack focusing on responsive UI, clear information hierarchy, and bilingual presentation for technical storytelling.",
-    result:
-      "Improves project discoverability and creates a more consistent professional profile for AI/Data internship applications.",
-  },
   "https://github.com/laninh-tech/Diabetes-Health-Risk-Analysis": {
     solution:
       "Analyze CDC BRFSS data to identify key diabetes risk factors and build a reusable health-risk classification workflow.",

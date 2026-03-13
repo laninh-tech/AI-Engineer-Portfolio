@@ -1,13 +1,13 @@
-# AI Engineer Portfolio
+# AI-Engineer-Portfolio
 
-A modern personal portfolio for AI Engineer / Data Scientist positioning, featuring bilingual content, categorized project browsing, and a CV-grounded assistant.
+Portfolio website for showcasing AI Engineer and Data Science projects, with bilingual UI (VI/EN), categorized project browsing, and a CV-grounded chatbot.
 
-## Live Demo
+## Demo
 
+- Repository: https://github.com/laninh-tech/AI-Engineer-Portfolio
 - Local: http://localhost:3001
-- Production: update this section with your deployed URL (Vercel/Render/Netlify)
 
-## Screenshot
+## Preview
 
 ![Portfolio Overview](https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6)
 
@@ -16,104 +16,80 @@ A modern personal portfolio for AI Engineer / Data Scientist positioning, featur
 - React 19 + TypeScript
 - Vite 6
 - Tailwind CSS 4
-- Motion (Framer Motion runtime)
+- Motion
 - Lucide React
-- Express (API server)
+- Express API server
 - Google Gemini API (`@google/genai`)
-- `pdf-parse` for CV ingestion
+- `pdf-parse` (mini-RAG CV context)
 
-## Key Features
+## Features
 
-- 4/6 hero balance layout with centered alignment for portrait and introduction
-- Categorized horizontal project scroll with hidden scrollbar and arrow navigation
-- Bilingual experience (Vietnamese/English) with language-aware project modal content
-- Contact section with validated external links (GitHub/LinkedIn open in new tab)
-- CV-grounded chatbot using mini-RAG retrieval and local fallback mode
-- Responsive design tuned for desktop and mobile
+- 4/6 hero layout balance with vertical centered alignment
+- Horizontal categorized project scroller with hidden scrollbar
+- Responsive UI across desktop and mobile
+- Bilingual translation support (Vietnamese/English)
+- Contact actions with verified external links (GitHub, LinkedIn)
+- CV-grounded chatbot with local fallback mode when API key is missing
 
-## Installation
+## Run Locally
 
-### 1. Clone repository
+1. Clone repository
 
 ```bash
-git clone <your-repo-url>
-cd Portfolio
+git clone https://github.com/laninh-tech/AI-Engineer-Portfolio.git
+cd AI-Engineer-Portfolio
 ```
 
-### 2. Install dependencies
+2. Install dependencies
 
 ```bash
 npm install
 ```
 
-### 3. Configure environment
-
-Create or update `.env.local`:
+3. Configure environment file
 
 ```env
-GEMINI_API_KEY=your_real_gemini_key
+GEMINI_API_KEY=your_gemini_api_key
 ```
 
-### 4. Run development server
+4. Start development server
 
 ```bash
 npm run dev
 ```
 
-### 5. Production build
+5. Build for production
 
 ```bash
 npm run build
-npm start
 ```
 
-## Folder Structure
+## Project Structure
 
 ```text
 public/
   CV_LaQuangNinh.pdf
   assets/images/portrait.jpg
 src/
-  components/        # UI modules (chat, contact, layout, projects, ui)
-  data/              # Project/contact data modules
-  locales/           # i18n translations (vi/en)
-  styles/            # Shared spacing/layout styles
-  App.tsx            # Page composition
-  index.css          # Global theme and utility styles
-server.ts            # Express API (/api/chat, /api/contact, /api/health)
-cvKnowledge.ts       # CV parsing + mini-RAG retrieval
-cvProfileData.ts     # Fallback profile facts for sparse/scanned CV files
+  components/      # UI modules (chat, contact, layout, projects, ui)
+  data/            # Static data and project metadata
+  locales/         # Translation dictionaries
+  styles/          # Shared spacing/layout styles
+  App.tsx
+  main.tsx
+  index.css
+server.ts          # API routes: health, contact, chat
+cvKnowledge.ts     # CV parsing + retrieval logic
+cvProfileData.ts   # Fallback profile facts
 ```
 
-## GitHub Update (CLI Steps)
+## Scripts
 
-Use force push only when you intentionally want to overwrite old history.
-
-### Clean local workspace
-
-```bash
-# remove stale generated files if needed
-rm -rf dist
-
-# verify working files before commit
-git status
-```
-
-### Commit and push
-
-```bash
-git add .
-git commit -m "feat: complete UI/UX refactor with horizontal scroll & clean code"
-git push origin main --force
-```
-
-If you want safer history, use normal push first:
-
-```bash
-git push origin main
-```
+- `npm run dev`: run local app server
+- `npm run lint`: run TypeScript checks
+- `npm run build`: create production build
 
 ## Notes
 
-- Keep secrets only in `.env.local` and never commit real API keys.
-- If your CV file is scanned and has little extractable text, chatbot uses fallback profile facts.
+- Keep real keys in `.env.local`, never commit secrets.
+- If CV text extraction is sparse, chatbot automatically uses fallback profile data.
