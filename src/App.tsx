@@ -60,6 +60,9 @@ export default function App() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [theme, setTheme] = useState("dark");
   const [lang, setLang] = useState<Language>("vi");
+  const baseUrl = import.meta.env.BASE_URL;
+  const portraitImageUrl = `${baseUrl}assets/images/portrait.jpg`;
+  const cvFileUrl = `${baseUrl}CV_LaQuangNinh.pdf`;
 
   const t = translations[lang];
   const totalProjects = featuredProjects.length;
@@ -124,7 +127,7 @@ export default function App() {
 
                 <div className="relative z-10 w-full h-full rounded-2xl overflow-hidden border border-cyan-500/20 bg-[var(--bg-secondary)] shadow-xl shadow-cyan-500/15">
                   <img
-                    src="/assets/images/portrait.jpg"
+                    src={portraitImageUrl}
                     alt="La Quang Ninh"
                     className="w-full h-full object-cover object-top brightness-105 contrast-105 saturate-105"
                   />
@@ -192,7 +195,7 @@ export default function App() {
                   <ChevronRight size={18} className="group-hover:translate-x-1 transition-transform" />
                 </a>
                 <a
-                  href="/CV_LaQuangNinh.pdf"
+                  href={cvFileUrl}
                   download="CV_LaQuangNinh.pdf"
                   className="ui-hover h-12 w-full flex items-center justify-center gap-2 px-5 glass text-[var(--text-primary)] rounded-xl font-bold hover:bg-white/10 transition-all border border-[var(--border-color)] text-sm md:text-base"
                 >

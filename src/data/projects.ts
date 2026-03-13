@@ -33,6 +33,23 @@ export const categoryLabels: Record<ProjectCategory, string> = {
 
 export const featuredProjects: Project[] = [
   {
+    category: "Web App/Deployment",
+    name: "AI-Engineer-Portfolio",
+    subtitle: "Personal portfolio website highlighting selected AI and data work",
+    date: "Mar 2026",
+    image:
+      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&fm=webp&q=80&w=1200",
+    tags: ["Portfolio", "React", "TypeScript", "GitHub Pages"],
+    solution:
+      "Xay dung website portfolio ca nhan de tong hop du an AI/Data va tao diem truy cap ro rang cho nha tuyen dung.",
+    tech:
+      "React, TypeScript, Vite, Tailwind CSS, Motion va workflow GitHub Pages cho deploy static.",
+    result:
+      "Tao mot portfolio online on dinh, responsive, de cap nhat va dong bo voi cac du an tren GitHub.",
+    github: "https://github.com/laninh-tech/AI-Engineer-Portfolio",
+    demo: "https://laninh-tech.github.io/AI-Engineer-Portfolio/",
+  },
+  {
     category: "Data Analysis & Visualization",
     name: "Diabetes Health Risk Analysis",
     subtitle: "Health risk classification on CDC BRFSS indicators",
@@ -131,6 +148,14 @@ export const featuredProjects: Project[] = [
 ];
 
 const projectContentEn: Record<string, { solution: string; tech: string; result: string }> = {
+  "https://github.com/laninh-tech/AI-Engineer-Portfolio": {
+    solution:
+      "Build a personal portfolio website as a single entry point to present selected AI/Data projects to recruiters and collaborators.",
+    tech:
+      "React, TypeScript, Vite, Tailwind CSS, Motion, and a GitHub Pages workflow for static deployment.",
+    result:
+      "Provides a stable, responsive, and easy-to-update online portfolio that stays aligned with related GitHub projects.",
+  },
   "https://github.com/laninh-tech/Diabetes-Health-Risk-Analysis": {
     solution:
       "Analyze CDC BRFSS data to identify key diabetes risk factors and build a reusable health-risk classification workflow.",
