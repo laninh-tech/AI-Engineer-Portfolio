@@ -1,0 +1,20 @@
+:root {
+  --section-space-mobile: 2.75rem;
+  --section-space-desktop: 4rem;
+}
+
+.section-spacing {
+  padding-top: var(--section-space-mobile);
+  padding-bottom: var(--section-space-mobile);
+}
+
+@media (min-width: 768px) {
+  .section-spacing {
+    padding-top: var(--section-space-desktop);
+    padding-bottom: var(--section-space-desktop);
+  }
+}
+
+.content-shell {
+  container-type: inline-size;
+}
